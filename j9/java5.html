@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+         <input type="text" id='text' />
+        <input type="email" /> 
+        <input type="password" /> 
+        <input type="radio" /> 
+        <input type="checkbox"/> 
+        <input type="submit" /> 
+        <input type="button" value="Its button"/> 
+        <script> var text =document.getElementById('text');
+         var changeText = function() { 
+         console.log(this.value); 
+        } 
+        var focusin = function() {
+             console.log('Тыкнули на инпут и можно вводить текст')
+              }, 
+             
+             focusout= function(){
+                 console.log('Тыкнули вне инпута текст уже не виден')
+            } 
+             text.addEventListener('focus', focusin, false); 
+             text.addEventListener('blur', focusout, false);
+        </script>
+</body>
+</html>
